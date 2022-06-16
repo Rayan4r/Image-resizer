@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learn2.css">
+    <title>Image Resizer</title>
+</head>
+<body>
+<!--1-div that contain everything-->
+    <div class="resizer">
+        <input type="file" class="rfile">
+<!--2-div for size-->
+        <div class="rsize">
+            <label class="Rayan">
+           width <input type="text" class="rwidth rwidth--width"  value="0">
+            Height <input type="text" class="rwidth rwidth--height"  value="0">
+        </label>
+            <label>
+                <input type="checkbox" class="rcheck" checked>
+                Keep Aspect Ratio
+            </label>
+        </div>
+<!--3-div for canvas-->
+         <canvas class="rcanvas" width="500" height="500"></canvas>
+    </div>
+
+    <script src="learn2.js" defer></script>
+</body>
+</html>
